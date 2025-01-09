@@ -2,7 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" ="width=device-width, initial-scale=1.0" />
     <title>Marcelo Guimarães - Desenvolvedor Full Stack</title>
     <style>
       :root {
@@ -320,8 +320,10 @@
         headerTitle.textContent = `Desenvolvedor Full Stack com ${totalExperience}+ Anos de Experiência`;
 
         // Atualiza texto no perfil profissional
-        const profileText = document.querySelector(".profile-experience");
-        profileText.textContent = `${totalExperience}+`;
+        const profileTexts = document.querySelectorAll(".profile-experience");
+        profileTexts.forEach(function (profileText) {
+          profileText.textContent = `${totalExperience}+`;
+        });
       });
     </script>
   </head>
@@ -338,10 +340,16 @@
             <div class="contact-item">📧 fotofacil20@gmail.com</div>
             <div class="contact-item">📱 (75) 99167-4108</div>
             <div class="contact-item">
-              <a href="https://github.com/MarceloFullStack" target="_blank">👨‍💻 GitHub</a>
+              <a href="https://github.com/MarceloFullStack" target="_blank"
+                >👨‍💻 GitHub</a
+              >
             </div>
             <div class="contact-item">
-              <a href="https://www.linkedin.com/in/marcelodeveloper/" target="_blank">🔗 LinkedIn</a>
+              <a
+                href="https://www.linkedin.com/in/marcelodeveloper/"
+                target="_blank"
+                >🔗 LinkedIn</a
+              >
             </div>
           </div>
         </header>
@@ -351,47 +359,60 @@
             <h2 class="section-title">Perfil Profissional</h2>
             <p>
               Desenvolvedor Full Stack apaixonado por tecnologia com
-              <span class="profile-experience"></span> construindo soluções
-              empresariais de alto impacto. Minha pós-graduação em Inteligência
-              Artificial me mantém alinhado com o desenvolvimento de software
-              moderno, combinando expertise em desenvolvimento tradicional com
-              engenharia avançada de prompts e IA generativa. Aplico esta visão
-              moderna no desenvolvimento de APIs RESTful, microsserviços e
-              automação inteligente, sempre escolhendo a abordagem ideal para
-              cada desafio - seja código tradicional para manutenibilidade, IA
-              para potencialização de resultados ou uma combinação de ambos.
-              Atualmente direcionando meu foco para o ecossistema Spring Boot,
-              trazendo esta perspectiva contemporânea para o desenvolvimento
-              Java e backend.
+              <span class="profile-experience"></span> anos construindo soluções
+              empresariais de alto impacto, com sólida experiência em
+              PHP/Laravel, React.js e PostgreSQL. Minha pós-graduação em
+              Inteligência Artificial me mantém alinhado com o desenvolvimento
+              de software moderno, combinando expertise prática em
+              desenvolvimento tradicional com engenharia avançada de prompts e
+              IA generativa. Aplico esta visão moderna no desenvolvimento de
+              APIs RESTful, microsserviços e automação inteligente, sempre
+              escolhendo a abordagem ideal para cada desafio - seja código
+              tradicional para manutenibilidade, IA para potencialização de
+              resultados ou uma combinação de ambos. Atualmente direcionando meu
+              foco para o ecossistema Spring Boot, trazendo toda minha
+              experiência em desenvolvimento web empresarial para o
+              desenvolvimento Java e backend.
             </p>
             <h4>Diferencial em IA e Transição</h4>
             <p>
-              Minha especialização em IA, me fez criar um foco particular em IA generativa e
-              engenharia de prompts, me proporciona uma perspectiva diferenciada
-              no desenvolvimento de software. Aplico este conhecimento para
-              otimizar processos de desenvolvimento, seja através da automação
-              inteligente de tarefas repetitivas, geração assistida de código ou
-              análise avançada de requisitos. Atualmente, direciono meu foco
-              para o ecossistema Spring Boot e Java, tecnologias que escolhi
-              estrategicamente por sua robustez no desenvolvimento de sistemas
-              corporativos, forte tipagem, rico ecossistema de bibliotecas
-              testadas e predominância em grandes corporações que priorizam
-              qualidade e manutenibilidade.
+              Minha especialização em IA, combinada com experiência prática em
+              desenvolvimento Full Stack (Laravel, React.js, PostgreSQL), me
+              proporciona uma perspectiva diferenciada no desenvolvimento de
+              software. Aplico este conhecimento para otimizar processos de
+              desenvolvimento, seja através da automação inteligente de tarefas
+              repetitivas, geração assistida de código ou análise avançada de
+              requisitos. Escolhi direcionar meu foco para o ecossistema Spring
+              Boot e Java, aproveitando minha experiência com sistemas
+              corporativos robustos, forte tipagem (TypeScript), e
+              desenvolvimento de APIs RESTful escaláveis para uma transição
+              natural a esta stack.
             </p>
             <div class="highlight-box">
               Busco uma posição júnior como desenvolvedor Java Spring Boot para
               consolidar conhecimentos nesta stack específica, trazendo minha
-              experiência prévia em desenvolvimento de APIs RESTful e
-              microsserviços. Minha pós-graduação em IA e experiência com
-              automação inteligente complementam o domínio dos fundamentos de
-              programação, permitindo criar soluções que integram
-              desenvolvimento tradicional com tecnologias emergentes de forma
-              eficiente. Familiarizado com boas práticas como código limpo e
-              testes unitários, busco aprofundar conhecimentos em padrões de
-              projeto e princípios SOLID no contexto do Spring Framework.
-              Comprometido com aprendizado contínuo e desenvolvimento
-              profissional, combinando inovação tecnológica baseada em IA com
-              fundamentos sólidos de engenharia de software.
+              experiência de <span class="profile-experience"></span> anos em
+              desenvolvimento de APIs RESTful e microsserviços, com sólida base
+              em Programação Orientada a Objetos e padrões de projeto. Aplico
+              conceitos fundamentais de POO como encapsulamento, herança,
+              polimorfismo e composição no desenvolvimento diário,
+              complementando esta expertise técnica com uso responsável de
+              ferramentas modernas como GitHub Copilot, Claude e editores
+              inteligentes como Cursor. Minha especialização em IA me permite
+              avaliar criticamente e refinar as sugestões geradas, garantindo
+              que o código final siga princípios sólidos de POO, design patterns
+              e boas práticas. Em ambientes que exigem confidencialidade,
+              utilizo LLMs locais com RAG (Retrieval-Augmented Generation)
+              integrado à documentação técnica do projeto, assegurando que dados
+              sensíveis permaneçam protegidos. Minha experiência com código
+              limpo, SOLID e desenvolvimento orientado a testes fornece a base
+              necessária para garantir que o código, seja gerado por IA ou não,
+              mantenha alta qualidade e manutenibilidade. Comprometido com
+              aprendizado contínuo e excelência técnica, foco no domínio
+              profundo dos fundamentos e princípios do Spring Framework, usando
+              IA de forma estratégica como ferramenta de aceleração do
+              desenvolvimento - sempre priorizando a robustez e as melhores
+              práticas da comunidade Java.
             </div>
           </section>
 
